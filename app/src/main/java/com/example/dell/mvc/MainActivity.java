@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView mQuestionTextView;
 
-    TrueFalse[] mAnswerKey = new TrueFalse[] {
+    TrueFalse[] mAnswerKey = new TrueFalse[]{
             new TrueFalse(R.string.question_oceans, true),
             new TrueFalse(R.string.question_mideast, false),
             new TrueFalse(R.string.question_africa, false),
@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         //set text to first question in array
 
-        mTrueButton = (Button)findViewById(R.id.true_button);
+        mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mFalseButton = (Button)findViewById(R.id.false_button);
+        mFalseButton = (Button) findViewById(R.id.false_button);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mNextButton = (Button)findViewById(R.id.next_button);
+        mNextButton = (Button) findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,9 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
         updateQuestion();
     }
-
-
-
 
 
     @Override
